@@ -1,0 +1,30 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -60 -50 -60 50 {}
+L 4 60 -50 60 50 {}
+L 4 -60 -50 60 -50 {}
+L 4 -60 50 60 50 {}
+L 7 60 -20 80 -20 {}
+L 7 -40 -70 -40 -50 {}
+L 7 60 0 80 0 {}
+L 7 60 20 80 20 {}
+L 7 -40 50 -40 70 {}
+B 5 77.5 -22.5 82.5 -17.5 {name=port_1 dir=inout }
+B 5 -42.5 -72.5 -37.5 -67.5 {name=vccc dir=inout }
+B 5 77.5 -2.5 82.5 2.5 {name=port_2 dir=inout }
+B 5 77.5 17.5 82.5 22.5 {name=port_3 dir=inout }
+B 5 -42.5 67.5 -37.5 72.5 {name=veee dir=inout }
+T {@symname} -14.5 54 0 0 0.3 0.3 {}
+T {@name} 65 -62 0 0 0.2 0.2 {}
+T {port_1} 55 -24 0 1 0.2 0.2 {}
+T {vccc} -44 -45 3 1 0.2 0.2 {}
+T {port_2} 55 -4 0 1 0.2 0.2 {}
+T {port_3} 55 16 0 1 0.2 0.2 {}
+T {veee} -36 45 1 1 0.2 0.2 {}

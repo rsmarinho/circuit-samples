@@ -1,0 +1,35 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=ths4500
+format="@name @PDbar @@Vinp @@Vinn @@Vocm @@Voutp @@Voutn @@Vsp @@Vsn @symname"
+template="name=x1 PDbar=0"
+}
+V {}
+S {}
+E {}
+L 4 -20 -30 -20 30 {}
+L 4 -20 -30 50 0 {}
+L 4 -20 30 50 0 {}
+L 4 30 10 40 10 {}
+L 4 -30 -20 -20 -20 {}
+L 4 -30 20 -20 20 {}
+L 4 10 20 10 30 {}
+L 4 10 -30 10 -20 {}
+L 4 30 -10 40 -10 {}
+L 4 -30 0 -20 0 {}
+B 5 -32.5 -22.5 -27.5 -17.5 {name=Vinn dir=in}
+B 5 -32.5 17.5 -27.5 22.5 {name=Vinp dir=in}
+B 5 37.5 7.5 42.5 12.5 {name=Voutn dir=out}
+B 5 7.5 27.5 12.5 32.5 {name=Vsn dir=in}
+B 5 7.5 -32.5 12.5 -27.5 {name=Vsp dir=in pinnumber=3}
+B 5 37.5 -12.5 42.5 -7.5 {name=Voutp dir=out}
+B 5 -32.5 -2.5 -27.5 2.5 {name=Vocm dir=in}
+T {@name} 23.75 -36.25 0 0 0.2 0.2 {}
+T {@symname} 20 25 0 0 0.3 0.3 {}
+T {Vin-} -17.5 -22.5 0 0 0.1 0.1 {}
+T {Vin+} -17.5 17.5 0 0 0.1 0.1 {}
+T {Vout-} 35 15 0 0 0.1 0.1 {}
+T {Vs+} 5 -15 0 0 0.1 0.1 {}
+T {Vs-} 5 7.5 0 0 0.1 0.1 {}
+T {Vout+} 35 -15 2 1 0.1 0.1 {}
+T {Vocm} -17.5 -2.5 0 0 0.1 0.1 {}

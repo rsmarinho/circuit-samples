@@ -1,0 +1,384 @@
+*THS4500
+*****************************************************************************
+* (C) Copyright 2016 Texas Instruments Incorporated. All rights reserved.
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer.
+*****************************************************************************
+*
+** Released by: WEBENCH(R) Design Center, Texas Instruments Inc.
+* Part: THS4500
+* Date: 30/06/2016 
+* Model Type: All In One
+* Simulator: TINA
+* Simulator Version:  9.3.50.40 SF-TI
+* EVM Order Number: N/A 
+* EVM Users Guide:  N/A 
+* Datasheet: SLOS350F
+*
+* Model Version: 1.0
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Version 1.0 : Release to Web
+*
+*****************************************************************************
+
+*****************************************************************************
+* Notes:
+
+
+
+
+
+
+* THS4500 MACRO MODEL
+
+.SUBCKT THS4500 PDbar Vin+ Vin- Vocm Vout+ Vout- Vs+ Vs-
+R_R7         N350252 N347297  900
+C_C8         VS- N402811  1p
+*C_C8         VS- N402811  .01p
+D_D27         VOUT+ N463482 Dbreak
+R_R22         N525185 VS+  908k
+E_E11         N583760 N357101 N303573 N354854 .5
+*E_E11         N583760 N357101 N303573 N354854 .25
+D_D35         N402811 N402451 Dbreak 1
+D_D36         N166465 VS- Dbreak 1
+D_D21         N537436 N423842 Dbreak .001
+R_R16         N354854 N303573  316k
+D_D25         N303573 N537473 Dbreak .001
+D_D13         N461258 N463401 Dbreak
+R_R5         N476582 N347052  9.45k
+G_G8         N402451 N407546 N347052 VS- .0133
+E_E13         N308222 VS- N402451 VS- 1
+C_C5         VS- VOCM  1p
+C_C3         VS- VIN+  1p
+D_D15         N407189 N402257 Dbreak 1
+D_D3         N307743 N468766 Dbreak 5
+E_E8         N356172 N423842 N317703 N194578 1000
+R_R12         VOCM N317703  1k
+R_R24         VS- N166465  100k
+C_C7         VS- VIN-  1p
+R_R8         N166465 N476582  4.25k
+R_R26         N603550 N166465  3.15e6
+C_C6         N354854 N303573  706f
+*C_C6          N354854 N303573  200f
+R_R4         N587024 N407189  212
+E_E12         N303573 VS- VS+ VS- .5
+R_R2         VS+ N166918  250k
+G_G3         VS+ VIN+ N603550 VS- 7.5e-6
+R_R27         N603620 N166465  3.15e6
+D_D32         N362132 N317703 Dbreak 1
+R_R20         N583760 N402811  212
+G_G4         N463401 N463347 N476582 VS- .1745
+E_E10         N362132 VS- N166465 VS- 2
+G_G7         VS+ VIN- N603620 VS- 7.5e-6
+C_C9         VS- N502903  4p
+D_D9         N317703 N362270 Dbreak 1
+D_D33         N362132 N354854 Dbreak 1
+R_R14         N303573 VIN+  1e7
+D_D14         N307831 N307861 Dbreak 5
+X_F1    N515576 VS- N303573 N354854 Diff2_F1
+E_E1         VS+ N307743 VS+ N407134 1
+E_E3         VS+ N362270 N166465 VS- 2
+G_G9         VS+ N166465 N525185 VS- 5.33e-8
+R_R3         N468766 N461258  4
+R_R28         N603620 N603550  1e9
+R_R25         VS- N347377  150e7
+D_D8         N354854 N362270 Dbreak 1
+D_D11         N361278 N347297 Dbreak .1
+R_R9         VOCM N303573  25k
+R_R13         N356203 N356172  884k
+R_R6         N307831 N461258  4
+D_D28         N407546 N402811 Dbreak 1
+R_R1         PDBAR VS+  62k
+E_E5         N307861 VS- N402257 VS- 1
+R_R18         N303573 VIN-  1e7
+D_D26         N463455 VOUT+ Dbreak
+D_D29         N551738 N339403 Dbreak 5
+D_D16         N347377 N361243 Dbreak .1
+D_D20         N357170 N350102 Dbreak .001
+D_D37         N525275 VS- Dbreak .01
+D_D2         N407134 N407189 Dbreak 1
+C_C1         VS- PDBAR  1p
+D_D12         N463347 N461258 Dbreak
+R_R19         N339403 N461313  4
+D_D1         N166918 N502903 Dbreak .001
+R_R11         N194578 VOUT-  10k
+E_E6         N350252 N515576 N350102 VS- 1
+X_F2    N515613 VS- N354854 N303573 Diff2_F2
+R_R10         VIN+ N350102  1k
+D_D5         N502903 N347052 Dbreak .001
+D_D34         N308192 N308222 Dbreak 5
+D_D31         N461313 N463482 Dbreak
+G_G5         N537473 N537436 N476582 VS- .0001333
+D_D23         N357170 N350341 Dbreak .001
+E_E2         VS+ N519838 N166465 VS- 4
+D_D17         N361278 N347377 Dbreak .1
+D_D22         N423842 N537473 Dbreak .001
+D_D4         N166918 PDBAR Dbreak 10
+D_D6         N350102 N519838 Dbreak
+C_C4         N303573 N356203  1p
+R_R21         N308192 N461313  4
+D_D19         VOUT- N463401 Dbreak
+R_R15         VOUT+ N194578  10k
+E_E14         VS+ N357101 VS+ N356203 1
+E_E15         VS- N357170 N166465 VS- .5
+E_E4         N587024 N357101 N354854 N303573 .5
+*E_E4         N587024 N357101 N354854 N303573 .25
+G_G2         N361243 N361278 N303573 VS- .000120
+R_R17         VIN- N350341  1k
+D_D30         N463455 N461313 Dbreak
+R_R23         N525185 N525275  22.5k
+E_E7         N347377 N515613 N350341 VS- 1
+C_C2         VS- N407189  1p
+*C_C2         VS- N407189  .01p
+G_G1         N402257 N407134 N347052 VS- .0133
+E_E9         VS+ N551738 VS+ N407546 1
+D_D7         N350341 N519838 Dbreak
+D_D24         N537436 N303573 Dbreak .001
+G_G6         N463482 N463455 N476582 VS- .1745
+D_D10         N347297 N361243 Dbreak .1
+D_D18         N463347 VOUT- Dbreak
+.ENDS
+
+
+
+.model Dbreak D Is=1e-14 Cjo=.1pF Rs=.1
+
+
+
+.SUBCKT RC_Network Ccom Rin
+R_R99         N07766 N07793  1k
+R_R89         N07382 N07355  1k
+R_R79         N07652 N07625  1k
+R_R69         N07082 N07109  1k
+C_C98         CCOM N07793  10n
+R_R59         N06566 N06539  1k
+C_C88         CCOM N07382  10n
+R_R49         N06836 N06809  1k
+R_R39         N06266 N06293  1k
+C_C78         CCOM N07652  10n
+C_C68         CCOM N07109  10n
+R_R29         N05750 N05723  1k
+R_R19         N06020 N05993  1k
+C_C58         CCOM N06566  10n
+C_C48         CCOM N06836  10n
+R_R9         N05480 N05507  1k
+C_C38         CCOM N06293  10n
+C_C28         CCOM N05750  10n
+C_C18         CCOM N06020  10n
+C_C8         CCOM N05507  10n
+R_R100         N08048 N07766  1k
+R_R90         N07355 N08009  1k
+R_R80         N07625 N07598  1k
+R_R70         N07055 N07082  1k
+R_R60         N06539 N07325  1k
+C_C99         CCOM N07766  10n
+C_C89         CCOM N07355  10n
+R_R50         N06809 N13506  1k
+R_R40         N06239 N06266  1k
+C_C79         CCOM N07625  10n
+C_C69         CCOM N07082  10n
+R_R30         N05723 N06509  1k
+C_C59         CCOM N06539  10n
+R_R20         N05993 N05966  1k
+R_R10         N05453 N05480  1k
+C_C49         CCOM N06809  10n
+C_C39         CCOM N06266  10n
+C_C29         CCOM N05723  10n
+C_C19         CCOM N05993  10n
+C_C9         CCOM N05480  10n
+R_R91         N07982 N08009  1k
+R_R81         N07598 N07571  1k
+R_R71         N07028 N07055  1k
+R_R61         N07298 N07325  1k
+C_C100         CCOM N08048  5n
+C_C90         N08009 CCOM  10n
+R_R51         N13506 N06755  1k
+C_C80         CCOM N07598  10n
+R_R41         N06212 N06239  1k
+R_R31         N06482 N06509  1k
+C_C70         CCOM N07055  10n
+C_C60         CCOM N07325  10n
+R_R21         N05966 N05939  1k
+C_C50         CCOM N13506  10n
+R_R11         N05426 N05453  1k
+R_R1         RIN RIN  1k
+C_C40         CCOM N06239  10n
+C_C30         CCOM N06509  10n
+C_C20         CCOM N05966  10n
+C_C10         CCOM N05453  10n
+R_R92         N07955 N07982  1k
+R_R82         N07571 N07544  1k
+R_R72         N07001 N07028  1k
+R_R62         N07271 N07298  1k
+R_R52         N06755 N06728  1k
+C_C91         CCOM N07982  10n
+C_C81         CCOM N07571  10n
+R_R42         N06185 N06212  1k
+C_C71         CCOM N07028  10n
+R_R32         N06455 N06482  1k
+R_R22         N05939 N05912  1k
+C_C61         CCOM N07298  10n
+C_C51         CCOM N06755  10n
+R_R12         N05399 N05426  1k
+R_R2         N05669 RIN  1k
+C_C41         CCOM N06212  10n
+C_C31         CCOM N06482  10n
+C_C21         CCOM N05939  10n
+C_C11         CCOM N05426  10n
+C_C1         CCOM RIN  5n
+R_R93         N07928 N07955  1k
+R_R83         N07544 N07517  1k
+R_R73         N06974 N07001  1k
+R_R63         N07244 N07271  1k
+C_C92         CCOM N07955  10n
+R_R53         N06728 N06701  1k
+R_R43         N06158 N06185  1k
+C_C82         CCOM N07544  10n
+C_C72         CCOM N07001  10n
+R_R33         N06428 N06455  1k
+R_R23         N05912 N05885  1k
+C_C62         CCOM N07271  10n
+C_C52         CCOM N06728  10n
+R_R13         N05372 N05399  1k
+C_C42         CCOM N06185  10n
+R_R3         N05642 N05669  1k
+C_C32         CCOM N06455  10n
+C_C22         CCOM N05912  10n
+C_C12         CCOM N05399  10n
+C_C2         CCOM N05669  10n
+R_R94         N07901 N07928  1k
+R_R84         N07517 N07490  1k
+R_R74         N06947 N06974  1k
+R_R64         N07217 N07244  1k
+C_C93         CCOM N07928  10n
+R_R54         N06701 N06674  1k
+R_R44         N06131 N06158  1k
+C_C83         CCOM N07517  10n
+C_C73         CCOM N06974  10n
+R_R34         N06401 N06428  1k
+C_C63         CCOM N07244  10n
+R_R24         N05885 N05858  1k
+R_R14         N05345 N05372  1k
+C_C53         CCOM N06701  10n
+C_C43         CCOM N06158  10n
+R_R4         N05615 N05642  1k
+C_C33         CCOM N06428  10n
+C_C23         CCOM N05885  10n
+C_C13         CCOM N05372  10n
+C_C3         CCOM N05642  10n
+R_R95         N07874 N07901  1k
+R_R85         N07490 N07463  1k
+R_R75         N07736 N06947  1k
+R_R65         N07190 N07217  1k
+C_C94         CCOM N07901  10n
+R_R55         N06674 N06647  1k
+C_C84         CCOM N07490  10n
+R_R45         N06917 N06131  1k
+R_R35         N06374 N06401  1k
+C_C74         CCOM N06947  10n
+C_C64         CCOM N07217  10n
+R_R25         N05858 N05831  1k
+R_R15         N06101 N05345  1k
+C_C54         CCOM N06674  10n
+R_R5         N05588 N05615  1k
+C_C44         CCOM N06131  10n
+C_C34         CCOM N06401  10n
+C_C24         CCOM N05858  10n
+C_C14         CCOM N05345  10n
+C_C4         CCOM N05615  10n
+R_R96         N07847 N07874  1k
+R_R86         N07463 N07436  1k
+R_R76         N07736 N07709  1k
+R_R66         N07163 N07190  1k
+R_R56         N06647 N06620  1k
+C_C95         CCOM N07874  10n
+C_C85         CCOM N07463  10n
+R_R46         N06917 N06890  1k
+R_R36         N06347 N06374  1k
+C_C75         CCOM N07736  10n
+C_C65         CCOM N07190  10n
+R_R26         N05831 N05804  1k
+C_C55         CCOM N06647  10n
+R_R16         N06101 N06074  1k
+R_R6         N05561 N05588  1k
+C_C45         CCOM N06917  10n
+C_C35         CCOM N06374  10n
+C_C25         CCOM N05831  10n
+C_C15         CCOM N06101  10n
+C_C5         CCOM N05588  10n
+R_R97         N07820 N07847  1k
+R_R87         N07436 N07409  1k
+R_R77         N07709 N07682  1k
+R_R67         N07136 N07163  1k
+R_R57         N06620 N06593  1k
+C_C96         CCOM N07847  10n
+C_C86         CCOM N07436  10n
+R_R47         N06890 N06863  1k
+C_C76         CCOM N07709  10n
+R_R37         N06320 N06347  1k
+R_R27         N05804 N05777  1k
+C_C66         CCOM N07163  10n
+C_C56         CCOM N06620  10n
+R_R17         N06074 N06047  1k
+C_C46         CCOM N06890  10n
+R_R7         N05534 N05561  1k
+C_C36         CCOM N06347  10n
+C_C26         CCOM N05804  10n
+C_C16         CCOM N06074  10n
+C_C6         CCOM N05561  10n
+R_R98         N07793 N07820  1k
+R_R88         N07409 N07382  1k
+R_R78         N07682 N07652  1k
+R_R68         N07109 N07136  1k
+C_C97         CCOM N07820  10n
+R_R58         N06593 N06566  1k
+R_R48         N06863 N06836  1k
+C_C87         CCOM N07409  10n
+C_C77         CCOM N07682  10n
+R_R38         N06293 N06320  1k
+C_C67         CCOM N07136  10n
+R_R28         N05777 N05750  1k
+R_R18         N06047 N06020  1k
+C_C57         CCOM N06593  10n
+C_C47         CCOM N06863  10n
+R_R8         N05507 N05534  1k
+C_C37         CCOM N06320  10n
+C_C27         CCOM N05777  10n
+C_C17         CCOM N06047  10n
+C_C7         CCOM N05534  10n
+.ENDS
+
+
+
+.subckt SCHEMATIC2_F1 1 2 3 4
+F_F1         3 4 VF_F1 1e6
+VF_F1         1 2 0V
+.ends SCHEMATIC2_F1
+*$
+
+.subckt Diff2_F1 1 2 3 4
+F_F1         3 4 VF_F1 1
+*F_F1         3 4 VF_F1 2
+VF_F1         1 2 0V
+.ends Diff2_F1
+*$
+
+.subckt Diff2_F2 1 2 3 4
+F_F2         3 4 VF_F2 1
+*F_F2         3 4 VF_F2 2
+VF_F2         1 2 0V
+.ends Diff2_F2
+
+
+
+
+*$
